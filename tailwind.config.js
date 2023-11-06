@@ -1,0 +1,70 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./app.vue",
+    "./error.vue",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: "#f0faff",
+          100: "#e1f4fd",
+          200: "#bbebfc",
+          300: "#7fdcfa",
+          400: "#3bcbf5",
+          500: "#12b5e5",
+          600: "#06a3da",
+          700: "#06749e",
+          800: "#096283",
+          900: "#0e526c",
+          950: "#093448",
+        },
+        midnight: {
+          50: "#edf9ff",
+          100: "#d6f0ff",
+          200: "#b5e6ff",
+          300: "#83d9ff",
+          400: "#48c2ff",
+          500: "#1ea1ff",
+          600: "#0682ff",
+          700: "#0069f5",
+          800: "#0854c5",
+          900: "#0d4a9b",
+          950: "#091e3e",
+        },
+
+        secondary: {
+          50: "#f7f7f8",
+          100: "#efeef0",
+          200: "#dadadd",
+          300: "#b9b9c0",
+          400: "#94939d",
+          500: "#767681",
+          600: "#6b6a75",
+          700: "#4f4e56",
+          800: "#444349",
+          900: "#3b3b3f",
+          950: "#27272a",
+        },
+      },
+      fontFamily: {
+        nunito: "Nunito, sans-serif",
+      },
+      animation: {
+        slide: "slide 1s both",
+        zoomIn: "zoomIn 1s both",
+        animate: "animate 1s both",
+        slideInRight: "slideInRight 1s both",
+        slideInLeft: "slideInLeft 1s both",
+        slideInDown: "slideInDown 1s both",
+        continuous: "continuous 6s linear infinite",
+      },
+    },
+  },
+  plugins: [],
+};

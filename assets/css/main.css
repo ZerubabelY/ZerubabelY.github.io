@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Nunito&family=Playfair+Display&family=Poppins&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .animated_underline {
+    @apply relative before:absolute before:bottom-0 before:left-0 before:w-36 before:rounded before:h-[5px] before:bg-primary-600 after:absolute after:bottom-0 after:left-0 after:w-2 after:h-[5px] after:bg-white after:animate-continuous;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
